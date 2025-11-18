@@ -1,5 +1,48 @@
 # Claude Code Setup - Personal Development
 
+## Repository Information
+
+**GitHub Repository**: https://github.com/Lauuud/claude-code-setup
+
+This repository contains a reusable Claude Code workflow setup for personal development projects. All Claude configuration files (`.claude/` directory and `CLAUDE.md`) are version-controlled here.
+
+### Using This Setup in New Projects
+
+```bash
+# Clone the setup repository
+git clone https://github.com/Lauuud/claude-code-setup.git my-new-project
+cd my-new-project
+
+# Remove the git history and start fresh (optional)
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit: Claude Code setup"
+
+# Add your project-specific remote
+git remote add origin https://github.com/yourusername/your-project.git
+```
+
+### Keeping Setup Files Synced
+
+This project has two remotes configured:
+
+1. **origin** - Your project-specific repository (e.g., `Nuxt-claude-setup`)
+2. **claude-setup** - The Claude setup repository for tracking setup file changes
+
+```bash
+# View configured remotes
+git remote -v
+
+# Push setup file updates to claude-setup repository
+git push claude-setup main
+
+# Pull latest setup improvements from claude-setup
+git pull claude-setup main
+```
+
+---
+
 ## Quick Start
 
 ```bash
